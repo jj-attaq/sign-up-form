@@ -1,0 +1,49 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  background: #999;
+}
+h1 {
+  color: gold;
+}
+.test-div {
+  display: flex;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  width:100vw;
+}
+.row {
+  display: flex;
+}
+.small-col {
+  float: left;
+  width: 34%;
+}
+.large-col {
+  float: right;
+  width: 66%;
+}
+.side-picture {
+  position: relative;
+  min-width: 350px;
+  width: 66vw;
+  height: 100vh;
+  background: url(../img/fabrizio-conti-6dlZD3ZCoe4-unsplash.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-block {
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-grow: 2;
+}
