@@ -1,49 +1,32 @@
+* {
+  /* outline: solid red 1px; */
+}
 html,
 body {
   padding: 0px;
   margin: 0px;
 }
-html {
-  background: #999;
-}
-h1 {
-  color: gold;
-}
-.test-div {
-  display: flex;
-}
-.main {
-  display: flex;
-  justify-content: center;
-  width:100vw;
+.input-fields {
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
-.small-col {
-  float: left;
-  width: 34%;
-}
-.large-col {
-  float: right;
-  width: 66%;
-}
-.side-picture {
-  position: relative;
-  min-width: 350px;
-  width: 66vw;
-  height: 100vh;
-  background: url(../img/fabrizio-conti-6dlZD3ZCoe4-unsplash.jpeg);
-  background-size: cover;
+.left-col,
+.right-col {
+  /* margin: 0.5rem; */
+  /* outline: solid green 1px; */
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.form-block {
-  display: flex;
-  width: 60vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  flex-grow: 2;
+.left-col {
+}
+.right-col {
+}
+input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+input::placeholder {
+  /* color: #aaa; */
 }

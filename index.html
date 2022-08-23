@@ -8,31 +8,41 @@
 </head>
 <body>
   <div class="main">
-    <div class="side-picture">
-      <h1>Sign up form</h1>
-    </div>
+    <div class="side-picture"></div>
     <div class="form-block">
       <form action="">
         <fieldset>
-          <legend>Let's do this!</legend>
-          <div class="row">
-            <label class="small-col" for="firstName">First Name</label>
-            <input class="large-col" id="firstName" type="text" name="signUpForm">
-            <label class="small-col" for="lastName">Last Name</label>
-            <input class="large-col" id="lastName" type="text" name="signUpForm">
-          </div>
-          <div class="row">
-            <label class="small-col" for="email">E-Mail</label>
-            <input class="large-col" id="email" type="text" name="signUpForm">
-            <label class="small-col" for="phone">Phone Number</label>
-            <input class="large-col" id="phone" type="text" name="signUpForm">
-          </div>
-          <div class="row">
-            <label class="small-col" for="password">Password</label>
-            <input class="large-col" id="password" type="text" name="signUpForm">
-            <label class="small-col" for="confirmPassword">Confirm Password</label>
-            <input class="large-col" id="confirmPassword" type="text" name="signUpForm">
-          </div>
+          <legend>Sign up</legend>
+            <div class="row">
+              <div class="left-col">
+                <label for="first-name"></label>
+                <input id="first-name" type="text" name="first-name" placeholder="first name">
+              </div>
+              <div class="right-col">
+                <label for="last-name"></label>
+                <input id="last-name" type="text" name="last-name" placeholder="last name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="left-col">
+                <label for="email"></label>
+                <input id="email" type="email" name="email" placeholder="e-mail">
+              </div>
+              <div class="right-col">
+                <label for="phone"></label>
+                <input id="phone" type="tel" name="phone" placeholder="phone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="left-col">
+                <label for="password"></label>
+                <input id="password" type="password" name="password" placeholder="password">
+              </div>
+              <div class="right-col">
+                <label for="confirmPassword"></label>
+                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="confirm password">
+              </div>
+            </div>
         </fieldset>
       </form>
     </div>
