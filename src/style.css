@@ -113,27 +113,33 @@ fieldset {
 }
 .left-col,
 .right-col {
-  display: flex;
+  /* display: flex; */
 }
 input {
+  font-size: large;
   color: #91f091;
   padding: 0.5rem;
   margin: 0.5rem;
   width: 15rem;
-  display: flex;
+  /* display: flex; */
   background-color: #010e01;
   border-color: #1f4a24;
   border-style: solid;
   border-radius: 0.33rem;
 }
 input:focus {
-  border-color: #91a091
+  outline: none;
+  border-color: #91a091;
 }
 input:focus::-webkit-input-placeholder {
   color: #91f091;
 }
 input::placeholder {
   color: #91a091;
+}
+input:not(:placeholder-shown):invalid {
+  border-color: #810101;
+  background-color: #1e0101;
 }
 @media screen and (max-width: 800px) {
   .container {
@@ -151,5 +157,15 @@ input::placeholder {
     width: 100vw;
     height: 70vh;
     /* justify-content: center; */
+  }
+}
+@media only screen and (hover: none) and (pointer: coarse) {
+/* Regular CSS rules here*/
+  @media (orientation: landscape) {
+    .side-picture {
+      height: auto;
+    }
+    .logo {
+    }
   }
 }
