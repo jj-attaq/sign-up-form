@@ -1,10 +1,22 @@
+:root {
+  --color: ;
+  --main-background: #090a07;
+  --other-background: #141614;
+  --button-background: #a484a4;
+  --placeholder-color: #91a091;
+  --input-color: #91f091;
+  --input-background: #010e01;
+  --error-background: #1e0101;
+  --error-border: #810101;
+
+}
 * {
   /* outline: solid red 1px; */
   font-family: customFont;
 }
 html,
 body {
-  background: #090a07;
+  background: var(--main-background);
   padding: 0px;
   margin: 0px;
 }
@@ -39,8 +51,7 @@ button {
   margin: 2rem 0rem 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #a484a4;
-  /* color: #91f091; */
+  background-color: var(--button-background);
   color: #ffffff;
   font-family: customFontBold;
   font-size: x-large;
@@ -63,7 +74,7 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #141614;
+  background-color: var(--other-background);
   box-shadow: inset 0px 0px 2px 0px rgb(218 162 180);
 }
 h1 {
@@ -87,13 +98,8 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  /* justify-content: center; */
-  /* align-items: start; */
-  /* flex-grow: 2; */
 }
 .form-block--form {
-  background-color: #090a07;
-  /*---------------*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,18 +117,13 @@ fieldset {
   flex-wrap: wrap;
   margin: 1rem;
 }
-.left-col,
-.right-col {
-  /* display: flex; */
-}
 input {
   font-size: large;
   color: #91f091;
   padding: 0.5rem;
   margin: 0.5rem;
   width: 15rem;
-  /* display: flex; */
-  background-color: #010e01;
+  background-color: var(--input-background);
   border-color: #1f4a24;
   border-style: solid;
   border-radius: 0.33rem;
@@ -135,11 +136,12 @@ input:focus::-webkit-input-placeholder {
   color: #91f091;
 }
 input::placeholder {
-  color: #91a091;
+  color: var(--placeholder-color);
 }
-input:not(:placeholder-shown):invalid {
-  border-color: #810101;
-  background-color: #1e0101;
+input:not(:placeholder-shown):invalid,
+.error-password-match {
+  border-color: var(--error-border);
+  background-color: var(--error-background);
 }
 @media screen and (max-width: 800px) {
   .container {
@@ -149,14 +151,9 @@ input:not(:placeholder-shown):invalid {
     width: 100vw;
     height: 100%;
   }
-  .header,
-  .footer {
-    /* height: 20vh; */
-  }
   .form-block {
     width: 100vw;
     height: 70vh;
-    /* justify-content: center; */
   }
 }
 @media only screen and (hover: none) and (pointer: coarse) {
